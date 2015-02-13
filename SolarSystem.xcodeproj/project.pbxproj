@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		DFBDA1921A8E95C2000A1402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1911A8E95C2000A1402 /* main.m */; };
 		DFBDA1951A8E95C2000A1402 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1941A8E95C2000A1402 /* AppDelegate.m */; };
-		DFBDA1981A8E95C2000A1402 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1971A8E95C2000A1402 /* ViewController.m */; };
 		DFBDA19B1A8E95C2000A1402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBDA1991A8E95C2000A1402 /* Main.storyboard */; };
 		DFBDA19D1A8E95C2000A1402 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBDA19C1A8E95C2000A1402 /* Images.xcassets */; };
 		DFBDA1A01A8E95C2000A1402 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBDA19E1A8E95C2000A1402 /* LaunchScreen.xib */; };
 		DFBDA1AC1A8E95C3000A1402 /* SolarSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1AB1A8E95C3000A1402 /* SolarSystemTests.m */; };
+		DFBDA1B71A8E9615000A1402 /* TableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1B61A8E9615000A1402 /* TableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		DFBDA1911A8E95C2000A1402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFBDA1931A8E95C2000A1402 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFBDA1941A8E95C2000A1402 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DFBDA1961A8E95C2000A1402 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DFBDA1971A8E95C2000A1402 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DFBDA19A1A8E95C2000A1402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFBDA19C1A8E95C2000A1402 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFBDA19F1A8E95C2000A1402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DFBDA1A51A8E95C3000A1402 /* SolarSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBDA1AA1A8E95C3000A1402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFBDA1AB1A8E95C3000A1402 /* SolarSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarSystemTests.m; sourceTree = "<group>"; };
+		DFBDA1B51A8E9615000A1402 /* TableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableVC.h; path = ../TableVC.h; sourceTree = "<group>"; };
+		DFBDA1B61A8E9615000A1402 /* TableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableVC.m; path = ../TableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				DFBDA1931A8E95C2000A1402 /* AppDelegate.h */,
 				DFBDA1941A8E95C2000A1402 /* AppDelegate.m */,
-				DFBDA1961A8E95C2000A1402 /* ViewController.h */,
-				DFBDA1971A8E95C2000A1402 /* ViewController.m */,
 				DFBDA1991A8E95C2000A1402 /* Main.storyboard */,
+				DFBDA1B51A8E9615000A1402 /* TableVC.h */,
+				DFBDA1B61A8E9615000A1402 /* TableVC.m */,
 				DFBDA19C1A8E95C2000A1402 /* Images.xcassets */,
 				DFBDA19E1A8E95C2000A1402 /* LaunchScreen.xib */,
 				DFBDA18F1A8E95C2000A1402 /* Supporting Files */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFBDA1981A8E95C2000A1402 /* ViewController.m in Sources */,
+				DFBDA1B71A8E9615000A1402 /* TableVC.m in Sources */,
 				DFBDA1951A8E95C2000A1402 /* AppDelegate.m in Sources */,
 				DFBDA1921A8E95C2000A1402 /* main.m in Sources */,
 			);

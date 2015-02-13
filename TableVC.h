@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableVC.h
 //  SolarSystem
 //
 //  Created by Alfred on 13/2/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableVC : UITableViewController
 
 @end
-
