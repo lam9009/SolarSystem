@@ -10,4 +10,6 @@
 
 @interface TableVC : UITableViewController
 
+@property (strong,nonatomic) NSMutableArray * planets;
+
 @end
