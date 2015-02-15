@@ -7,6 +7,8 @@
 //
 
 #import "TableVC.h"
+#import "AstronomicalData.h"
+#import "SpaceObject.h"
 
 @interface TableVC ()
 
@@ -18,8 +20,37 @@
     [super viewDidLoad];
 
     self.planets = [[NSMutableArray alloc] init];
-    NSString *planet1 = @"Mercury";
-    [self.planets addObject:planet1];
+    for (NSMutableDictionary *planetData in [AstronomicalData allKnownPlanets]){
+        NSString *imageName = [NSString stringWithFormat:@"%@.jpg", planetData[PLANET_NAME]];
+        SpaceObject *planet = [[SpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageName]];
+        [self.planets addObject:planet];
+    }
+    
+//    NSString *planet1 = @"Mercury";
+//    NSString *planet2 = @"Venus";
+//    NSString *planet3 = @"Earth";
+//    NSString *planet4 = @"Mars";
+//    NSString *planet5 = @"Jupiter";
+//    NSString *planet6 = @"Saturn";
+//    NSString *planet7 = @"Uranus";
+//    NSString *planet8 = @"Neptune";
+//    
+//    
+//    [self.planets addObject:planet1];
+//    self.planets = [@[planet2,planet3,planet4,planet5,planet6,planet7,planet8] mutableCopy];
+//    
+//    //
+//    NSMutableDictionary *myDic = [[NSMutableDictionary alloc]init];
+//    [myDic setObject:@"Male" forKey:@"Gender"];
+//    [myDic setObject:@"Manager" forKey:@"Occupation"];
+//    [myDic setObject:@"United States" forKey:@"Citizenship"];
+//    [myDic setObject:@51 forKey:@"Age"];
+//    NSLog(@"%@", myDic);
+//    
+//    NSNumber *myNum1 = [NSNumber numberWithInt:5];
+//    NSNumber *myNum2 = [NSNumber numberWithFloat:3.1415926];
+//    NSLog(@"%@", myNum1);
+//    NSLog(@"%@", myNum2);
 
 }
 
@@ -35,14 +66,39 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [self.planets count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
 //    cell.textLabel.text = @"It is Valentine Day today!";
-    cell.textLabel.text = [self.planets objectAtIndex:indexPath.section];
+//    cell.textLabel.text = [self.planets objectAtIndex:indexPath.section];
+    
+//    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
+//    cell.detailTextLabel.text =[NSString stringWithFormat:@"Solar System Planet %li", indexPath.row+1];
+    
+    SpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
+    cell.textLabel.text = planet.name;
+    cell.textLabel.textColor = [UIColor yellowColor];
+    
+    if (indexPath.row == 0){
+        cell.backgroundColor = [UIColor blueColor];
+    }else if (indexPath.row == 1){
+        cell.backgroundColor = [UIColor greenColor];
+    }else if (indexPath.row == 2){
+        cell.backgroundColor = [UIColor brownColor];
+    }else if (indexPath.row == 3){
+        cell.backgroundColor = [UIColor grayColor];
+    }else if (indexPath.row == 4){
+        cell.backgroundColor = [UIColor yellowColor];
+    }else if (indexPath.row == 5){
+        cell.backgroundColor = [UIColor purpleColor];
+    }else if (indexPath.row == 6){
+        cell.backgroundColor = [UIColor redColor];
+    }else {
+        cell.backgroundColor = [UIColor darkGrayColor];
+    }
     return cell;
 }
 
