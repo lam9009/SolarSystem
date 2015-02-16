@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFAACE131A91D6FB00EA2F6D /* imageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAACE121A91D6FB00EA2F6D /* imageVC.m */; };
 		DFBDA1921A8E95C2000A1402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1911A8E95C2000A1402 /* main.m */; };
 		DFBDA1951A8E95C2000A1402 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBDA1941A8E95C2000A1402 /* AppDelegate.m */; };
 		DFBDA19B1A8E95C2000A1402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBDA1991A8E95C2000A1402 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFAACE111A91D6FB00EA2F6D /* imageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imageVC.h; path = ../imageVC.h; sourceTree = "<group>"; };
+		DFAACE121A91D6FB00EA2F6D /* imageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = imageVC.m; path = ../imageVC.m; sourceTree = "<group>"; };
 		DFBDA18C1A8E95C2000A1402 /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBDA1901A8E95C2000A1402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFBDA1911A8E95C2000A1402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				DFBDA1991A8E95C2000A1402 /* Main.storyboard */,
 				DFBDA1B51A8E9615000A1402 /* TableVC.h */,
 				DFBDA1B61A8E9615000A1402 /* TableVC.m */,
+				DFAACE111A91D6FB00EA2F6D /* imageVC.h */,
+				DFAACE121A91D6FB00EA2F6D /* imageVC.m */,
 				DFC1E3961A8FF6FD00130F52 /* SpaceObject.h */,
 				DFC1E3971A8FF6FD00130F52 /* SpaceObject.m */,
 				DFC1E37E1A8FF07100130F52 /* AstronomicalData.h */,
@@ -279,6 +284,7 @@
 			files = (
 				DFBDA1B71A8E9615000A1402 /* TableVC.m in Sources */,
 				DFBDA1951A8E95C2000A1402 /* AppDelegate.m in Sources */,
+				DFAACE131A91D6FB00EA2F6D /* imageVC.m in Sources */,
 				DFBDA1921A8E95C2000A1402 /* main.m in Sources */,
 				DFC1E3801A8FF07100130F52 /* AstronomicalData.m in Sources */,
 				DFC1E3981A8FF6FD00130F52 /* SpaceObject.m in Sources */,
