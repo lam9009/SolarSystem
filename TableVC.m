@@ -81,6 +81,7 @@
     SpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
     cell.textLabel.text = planet.name;
     cell.textLabel.textColor = [UIColor yellowColor];
+    cell.imageView.image = planet.spaceImage;
     
     if (indexPath.row == 0){
         cell.backgroundColor = [UIColor blueColor];
